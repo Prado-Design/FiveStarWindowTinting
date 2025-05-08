@@ -1,10 +1,5 @@
 /* Component Styles */
 
-/*Widget Test*/
-.reviews-widget{
-  height: 80vh;
-}
-
 /* Hero Buttons */
 .hero-buttons {
   display: flex;
@@ -16,6 +11,10 @@
 .hero-buttons .btn {
   min-width: 180px;
   justify-content: center;
+}
+
+.reviews-widget{
+  height: 85vh;
 }
 
 /* Logo */
@@ -289,12 +288,16 @@
 .service-features {
   margin-top: auto;
   margin-bottom: var(--spacing-md);
+  max-width: var(--container-max-width);
 }
+
+
 
 .service-features li {
   margin-bottom: var(--spacing-xs);
   padding-left: var(--spacing-md);
   position: relative;
+  
 }
 
 .service-features li::before {
@@ -302,7 +305,42 @@
   position: absolute;
   left: 0;
   color: var(--color-primary);
+ 
 }
+
+
+/* About List */
+.about-list {
+   margin: 10px;                            /* Add some space between list items */
+  text-align: left; 
+
+  max-width: 400px; 
+  display: flex;                          /* Use flexbox for centering */
+  justify-content: left;                
+  align-items: center;                  
+  flex-wrap: wrap;                         /* Allow wrapping if needed (can be removed if unnecessary) */
+  margin: 0 auto;                          /* Center the <ul> horizontally on the page */
+  padding: 0;                              /* Remove default padding */
+  list-style: none;                        /* Remove default bullets */
+  font-size: 16px;                         /* Adjust font size if needed */
+}
+
+
+.about-list li {
+  margin-bottom: var(--spacing-xs);
+  padding-left: var(--spacing-md);
+  position: relative;
+}
+
+.about-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+
+
 
 /* Feature Cards */
 .feature-card {
