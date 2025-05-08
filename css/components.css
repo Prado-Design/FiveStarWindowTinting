@@ -1,5 +1,10 @@
 /* Component Styles */
 
+/*Widget Test*/
+.reviews-widget{
+  height: 80vh;
+}
+
 /* Hero Buttons */
 .hero-buttons {
   display: flex;
