@@ -846,6 +846,27 @@
   padding: var(--spacing-xs) 0; /* Reduced vertical padding */
 }
 
+/* Header call button - always visible */
+.header-call-button {
+  margin: var(--spacing-xs) 0;
+}
+
+.header-call-button .btn {
+  min-width: 180px;
+  justify-content: center;
+}
+
+/* Footer call button spacing */
+.footer-call-button {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.footer-call-button .btn {
+  min-width: 180px;
+  justify-content: center;
+}
+
 /* Responsive Components */
 @media (max-width: 1000px) {
   .menu-toggle {
@@ -875,10 +896,6 @@
   .nav-link {
     font-size: var(--fs-md);
     padding: var(--spacing-sm) 0;
-  }
-  
-  .nav-phone {
-    margin: var(--spacing-md) 0 0 0;
   }
   
   .hero-buttons {
@@ -911,5 +928,10 @@
   .header-container {
     gap: var(--spacing-xxs); /* Even smaller gap on mobile */
     padding: var(--spacing-xxs) 0;
+  }
+  
+  .header-call-button .btn {
+    width: 100%;
+    max-width: 280px;
   }
 }
