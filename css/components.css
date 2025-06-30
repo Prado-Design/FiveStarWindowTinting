@@ -16,6 +16,11 @@
 .reviews-widget{
   height: 85vh;
   margin-bottom: var(--spacing-xxl);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Logo */
