@@ -1,6 +1,7 @@
 export function initTinting() {
     let currentTintLevel = 1; // Starting at 70% (level 1)
     const tintLevels = [70, 50, 35, 20, 15, 5]; // Percentage values for each level
+    const tintOpacities = [0.5, 0.65, 0.8, 0.85, 0.95, 1]; // Custom opacity values for each level
     const tintBarOpacities = [0, 0.1, 0.2, 0.3, 0.5, 0.7]; // Inverted sequential opacity values for each bar
     const maxLevel = 6;
     const minLevel = 1;
@@ -35,8 +36,8 @@ export function initTinting() {
             }
         });
 
-        // Update tint overlay opacity based on tint level
-        const tintOpacity = 1 - (tintLevels[currentTintLevel - 1] / 100);
+        // Update tint overlay opacity using custom values
+        const tintOpacity = tintOpacities[currentTintLevel - 1];
         tintPaths.forEach(path => {
             path.setAttribute('fill-opacity', tintOpacity.toString());
         });

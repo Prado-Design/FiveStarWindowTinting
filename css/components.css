@@ -15,6 +15,7 @@
 
 .reviews-widget{
   height: 85vh;
+  margin-bottom: var(--spacing-xxl);
 }
 
 /* Logo */
