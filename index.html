@@ -21,9 +21,11 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/tinting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="js/main.js" type="module" defer></script>
   </head>
   <body>
@@ -49,6 +51,85 @@
     </header>
 
     <main>
+
+      <section class="tint-section">
+
+          <div class="container">
+                <div class="header">
+                    <p>Shield Your Vehicle & Passengers</p>
+                </div>
+                
+          <div class="vehicle">
+              
+                        <svg class="tint-svg" viewBox="0 0 2731 990" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M842 324C889.333 268.333 1015.4 146.7 1141 105.5C1294.41 55.1782 1461.18 48.298 1524.71 45.6772C1526.2 45.6158 1527.63 45.5567 1529 45.4995C1530.63 45.4314 1532.31 45.3611 1534.03 45.289C1595.41 42.7144 1710.66 37.8807 1877 51.4994C1752.53 51.4995 1698.91 120.606 1660.21 170.48C1657.4 174.099 1654.67 177.617 1652 181C1628.55 210.679 1611.51 236.946 1597.8 258.064C1585.16 277.544 1575.36 292.643 1566 302C1547.9 320.101 1523.51 320.052 1500.08 320.004C1498.88 320.002 1497.69 320 1496.5 320C1492 320 1466.72 320.21 1427.76 320.535C1297 321.625 1012.14 324 842 324Z" fill="#190A04" fill-opacity="0.34" class="tint-path"/>
+                           <path d="M1894 82.9999C2022.29 86.4804 2098.65 160.672 2133.92 194.932L2134.5 195.5C2134.5 215.5 2134.5 231.32 2119 240C2094.59 253.668 2063.5 263.5 1862 291.5C1848.55 261.721 1840.74 256.503 1837.39 254.262C1837.25 254.17 1837.12 254.083 1837 254C1824.5 245.5 1763.5 239.655 1744 241C1726 242.241 1708 288.5 1703.5 307.5C1682.34 308.935 1666.58 310.112 1651.79 311.217C1645.97 311.652 1640.29 312.076 1634.5 312.5C1650.21 274.217 1704 175.499 1769 121C1804.5 92.7167 1844.91 81.6679 1894 82.9999Z" fill="#190A04" fill-opacity="0.34" class="tint-path"/> 
+                        </svg>
+                   
+          </div>
+
+            
+                <div class="controls">
+                    <div class="controls-inner">
+                        <div class="controls-content">
+                            <div class="tint-adjuster">
+                                <div class="tint-adjuster-content">
+                                    <div class="frame3">
+                                        <div class="frame3-content">
+                                            <div class="tint-label">
+                                                <p>Choose Your Tint (VTL): </p>
+                                            </div>
+                                            <div class="tint-value">
+                                                <p id="tint-percentage">70%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="level-adjuster">
+                                        <div class="minus-button" id="minus-btn">
+                                            <svg class="svg-container" fill="none" preserveAspectRatio="none" viewBox="0 0 44 44">
+                                                <g>
+                                                    <circle cx="22" cy="22" r="21" fill="#C92F33" stroke="white" stroke-linecap="round" stroke-width="2"/>
+                                                    <line x1="11" y1="22" x2="33" y2="22" stroke="white" stroke-linecap="round" stroke-width="2"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        
+                                        <div class="plus-button" id="plus-btn">
+                                            <svg class="svg-container" fill="none" preserveAspectRatio="none" viewBox="0 0 44 44">
+                                                <g>
+                                                    <circle cx="22" cy="22" r="21" fill="#C92F33" stroke="white" stroke-linecap="round" stroke-width="2"/>
+                                                    <line x1="22" y1="11" x2="22" y2="33" stroke="white" stroke-linecap="round" stroke-width="2"/>
+                                                    <line x1="11" y1="22" x2="33" y2="22" stroke="white" stroke-linecap="round" stroke-width="2"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        
+                                        <div class="tint-bars">
+                                            <div class="tint-bars-inner">
+                                                <svg class="svg-container" fill="none" preserveAspectRatio="none" viewBox="0 0 234 88">
+                                                    <g id="tint-bars-svg">
+                                                        <!-- Tint level bars -->
+                                                        <path d="M22.0932 87H2L41.9068 1H62L22.0932 87Z" fill="#C92F33" fill-opacity="1" stroke="white" stroke-width="2" class="tint-bar" data-level="1"/>
+                                                        <path d="M56.0932 87H36L75.9068 1H96L56.0932 87Z" stroke="white" stroke-width="2" class="tint-bar" data-level="2"/>
+                                                        <path d="M90.0932 87H70L109.907 1H130L90.0932 87Z" stroke="white" stroke-width="2" class="tint-bar" data-level="3"/>
+                                                        <path d="M124.093 87H104L143.907 1H164L124.093 87Z" stroke="white" stroke-width="2" class="tint-bar" data-level="4"/>
+                                                        <path d="M158.093 87H138L177.907 1H198L158.093 87Z" stroke="white" stroke-width="2" class="tint-bar" data-level="5"/>
+                                                        <path d="M192.093 87H172L211.907 1H232L192.093 87Z" stroke="white" stroke-width="2" class="tint-bar" data-level="6"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+</section>
+      
       <section class="hero">
         <div class="hero-content container">
           <h1 class="hero-title fade-in">Premium Auto<br>Window Tinting</h1>
@@ -60,16 +141,17 @@
         
       </section>
 
+
+    
+
+      
 <section id="services" class="services section">
 
-
           <div class="container">
-          <h2 class="section-title">About</h2>
-          <p class="section-subtitle">We are the leading car window tinting service in Roseville, Folsom, Fair Oaks, Citrus Heights, Carmichael, Rancho Cordova, El Dorado and Sacramento surroundings. We offer high-heat Super Ceramic window tint and professional tinting solutions for all makes and models. We are dedicated to providing exceptional customer service and ensuring total customer satisfaction with every tint job.</p>
-          <img src="https://FiveStarWindowTinting.github.io/pro/images/Best%20Window%20Tinting%20in%20Roseville.jpg" alt="Window Tinting Storefront Image">
+<img src="https://FiveStarWindowTinting.github.io/pro/images/Best%20Window%20Tinting%20in%20Roseville.jpg" alt="Window Tinting Storefront Image">
           </div>
   
-          <div class="container">
+        <div class="container">
           <h2 class="section-title">About</h2>
           <p class="section-subtitle">We are the leading car window tinting service in Roseville, Folsom, Fair Oaks, Citrus Heights, Carmichael, Rancho Cordova, El Dorado and Sacramento surroundings. We offer high-heat Super Ceramic window tint and professional tinting solutions for all makes and models. We are dedicated to providing exceptional customer service and ensuring total customer satisfaction with every tint job.</p>
           </div>
@@ -79,7 +161,7 @@
           <p class="section-subtitle">Our service is 100% just window tint. Feel confident that your tint will look amazing, no distractions with other services. We offer a wide range of window tinting options, including High-Heat Rejection Ceramic Films, UV protection films, and privacy solutions. We are experienced window tinting technicians. We use state-of-the-art technuiques and top-of-the-line materials to improve the comfort, style, and safety of your vehicle.</p>
           </div>
 
-          <div class="container">
+              <div class="container">
           <h2 class="section-title">Benefits</h2>
           <p class="section-subtitle">Choosing FIVE STAR WINDOW TINTING for your car tinting needs comes with numerous benefits. </p>
 
